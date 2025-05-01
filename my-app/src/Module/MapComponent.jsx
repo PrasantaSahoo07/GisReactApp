@@ -11,8 +11,8 @@ import { Point } from "ol/geom";
 import { fromLonLat, toLonLat } from "ol/proj";
 import { Circle as CircleStyle, Fill, Stroke, Style } from "ol/style";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL;
-
+//const API_BASE = import.meta.env.VITE_API_BASE_URL;
+const API_BASE = "http://localhost:8080/api/places";
 export default function MapComponent() {
   const mapRef = useRef();
   const vectorSource = new VectorSource();
